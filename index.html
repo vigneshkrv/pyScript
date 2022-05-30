@@ -9,13 +9,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div>
+            <div id="output" class="text-3xl"></div>
+            <py-script>
+                def sumNum(x,y):
+                    return x+y
+                sum = sumNum(2,7)
+                pyscript.write('output',sum)
+            </py-script>
+            <!-- py-repl shows the python interpreter -->
+            <py-repl></py-repl>
+        </div>
+        <hr class="m-5">
+        <div>
+            <div id="output2" class="text-3xl"></div>
+            <py-script>
+                import math
+                pyscript.write('output2',math.sqrt(14))
+            </py-script>
+        </div>
+        
+    </div>
     
-    <div id="output" class="text-3xl"></div>
-    <py-script>
-        def sumNum(x,y):
-            return x+y
-        sum = sumNum(2,7)
-        pyscript.write('output',sum)
-    </py-script>
 </body>
 </html>
