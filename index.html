@@ -12,7 +12,9 @@
     </py-env>
 </head>
 <body>
-    <div class="container">
+    
+    <main class="container h-screen flex flex-col justify-center">
+
         <div>
             <div id="output" class="text-3xl"></div>
             <py-script>
@@ -44,10 +46,12 @@
         <hr class="m-5">
         <div>
             <div id="output4" class="text-3xl"></div>
+            <button id="shuffle" class="mt-4 p-2 text-white bg-blue-600 rounded"
+             pys-onClick="shuffle_array">Shuffle</button>
             <py-script src="./main.py"> </py-script>
         </div>
         
-    </div>
-    
+    </main>
+
 </body>
 </html>
