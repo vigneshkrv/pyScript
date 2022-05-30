@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <title>Document</title>
+    <py-env>
+        - numpy
+    </py-env>
 </head>
 <body>
     <div class="container">
@@ -27,6 +30,15 @@
             <py-script>
                 import math
                 pyscript.write('output2',math.sqrt(14))
+            </py-script>
+        </div>
+        <hr class="m-5">
+        <div>
+            <div id="output3" class="text-3xl"></div>
+            <py-script>
+                import numpy as np
+                arr = np.array([22,32,45,75,12,10])
+                pyscript.write('output3',f"my array is {arr}")
             </py-script>
         </div>
         
